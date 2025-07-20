@@ -1,68 +1,90 @@
 html, body{
     font-family: Poppins, sans-serif;
-    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    /* background: #f5f5f5; */
 }
 
 .wrapper{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     overflow: hidden;
     background: linear-gradient(180deg, #d2cdc6 0%, #f5f5f5 100%);
 }
 
-.contener {
+/* .header {
+    background: linear-gradient(180deg, #d2cdc6 0%, #f5f5f5 100%);
+    position: relative;
+} */
+
+.nav__wrapper {
     max-width: 80rem;
+    min-height: 5.75rem;
     padding: 1.5rem;
     margin: 0 auto;
 }
 
-.header__top-inner{
+.nav__logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__nav-list {
+.nav__list {
     display: flex;   
 }
 
-.header__nav-item {
+.nav__links-item {
     margin-right: 1rem;
     padding: 0.625rem 1.5rem;
     font-weight: 400;
-    color: linear-gradient(180deg, #000 0%, #666 100%);
+    /* color: linear-gradient(180deg, #000 0%, #666 100%); */
 }
 
-.header__nav-item:last-child{
+.nav__links-item:last-child{
     margin-right: 0;
     padding: 0.625rem 2rem;
 }
 
 /* ---------------------------------------------------- */
 
-.header__content-p {
-    width: 80rem;
-    height: 21.5rem;
+.header__content {
     position: relative;
-    display: flex;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.header__content-p {
+    /* width: 80rem;
+    height: 21.5rem; */
+    /* position: relative; */
+    /* display: flex;
     justify-self: start;
-    flex-direction: column;
+    flex-direction: column; */
+    font-weight: 600;
+    font-size: 11.25rem;
+    line-height: 96%;
+    text-align: center;
 }
 
 .hedear__content-h1 {
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 11.25rem;
     line-height: 96%;
-    text-align: center;
+    text-align: center; */
     color: #52483e;
-    
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header__content-h2 {
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 11.25rem;
     line-height: 96%;
-    text-align: center;
+    text-align: center; */
     background: linear-gradient(0deg, #daccbc 0%, #afa497 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -74,7 +96,15 @@ html, body{
 }
 
 .header__headphon {
-    /* position: absolute; */
+    /* /* max-width: 100vw;
+    min-height: 100vh;
+    margin: 50vh auto; */
+    position: absolute;
+    /* top: -1.6875rem;
+    left: 6.125rem; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
